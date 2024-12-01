@@ -1,0 +1,84 @@
+body {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+li, ul, h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+.main {
+    background-color: bisque;
+    max-width: 600px;
+    min-height: 400px;
+    margin: 60px auto;
+    border-radius: 12px;
+}
+.title {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.input {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    width: 400px;
+    height: 40px;
+    padding: 0 10px;
+}
+.menu {
+    /* display: none; */
+}
+.menu__elem {
+    width: 400px;
+    list-style: none;
+    height: 30px;
+    background-color: pink;
+    padding: 0 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .3s background-color;
+}
+.menu__elem:hover {
+    background-color: rgb(200, 134, 145);
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.repository {
+    color: white;
+    list-style: none;
+    width: 400px;
+    height: 80px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid black;
+}
+.repository__left {
+    display: flex;
+    flex-direction: column;   
+}
+.repository__delete {
+    background: none;
+    border: none;
+}
+.repository__delete > svg {
+    transition: .3s all;
+}
+.repository__delete > svg:hover {
+    fill: rgb(216, 3, 3);
+}
